@@ -1,0 +1,69 @@
+/*
+* common.css 项目全局公用css
+* 注意：common.css 是根据项目情况来定，不同项目common.css可以不一样
+*/
+body {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background: #fff;
+    margin: 0;
+    border: none;
+    color: #333;
+    font-family: "Helvetica", 'Microsoft Yahei';
+}
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container .fixed-header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2.5rem;
+    z-index: 2;
+    background: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+    background-color: #fafafa;
+    border-bottom: #dedede 1px solid;
+    color: #333;
+}
+.container .fixed-header ul{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    width: 100%;
+}
+.container .fixed-header ul li{
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+}
+.container .fixed-header ul li.title{
+    flex: 2;
+    -webkit-flex: flex;
+    -moz-flex: flex;
+    font-size: .9rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.container .fixed-header ul li.back a{
+    color: #333;
+}
+.container .item-content{
+    margin-top: 2.5rem;
+    font-size: .7rem;
+}
+.container .item-self-content{
+    margin-top: 3rem;
+}
