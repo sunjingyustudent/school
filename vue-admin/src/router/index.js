@@ -32,6 +32,13 @@ const Rotate = r => require.ensure([], () => r(require('../pages/rotate.vue')), 
 //上传图片到七牛云
 const UploadQiniu = r => require.ensure([], () => r(require('../pages/uploadQiniu.vue')), 'UploadQiniu');
 
+//home主页
+const Home = r => require.ensure([], () => r(require('../pages/home.vue')), 'Home');
+
+/*前端*/
+//vue安装
+const VueInstall = r => require.ensure([], () => r(require('../pages/vue/vueInstall.vue')), 'VueInstall');
+
 
 //错误页面
 const Error = r => require.ensure([], () => r(require('../pages/error.vue')), 'Error');//错误页面
@@ -134,6 +141,22 @@ export default new Router({
       component: UploadQiniu,
       meta: {
         title: '上传图片到七牛云'
+      }
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home,
+      meta: {
+        title: '首页'
+      }
+    },
+    {
+      path: '/vueInstall',
+      name: 'VueInstall',
+      component: VueInstall,
+      meta: {
+        title: 'vue安装'
       }
     },
   ]
