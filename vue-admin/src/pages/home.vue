@@ -2,11 +2,11 @@
   <div class="home-wrap">
     <div class="home-head">
       <div class="head-menuList" :class="{'MenuList':!extendTopFlag}">
-        <span class="head-menuList-item">推荐 试试  哒哒</span>
+        <span class="head-menuList-item">推荐</span>
         <span class="head-menuList-item">前端</span>
         <span class="head-menuList-item">后端</span>
         <span class="head-menuList-item">数据库</span>
-        <span class="head-menuList-item">论坛</span>
+        <span class="head-menuList-item">git</span>
       </div>
       <div class="head-extend" @click="clickMenu" :class="{'extendBoder':!extendTopFlag}">
         <span class="head-extend-span " :class="{'extend-span-top':extendTopFlag}">

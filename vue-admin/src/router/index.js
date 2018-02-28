@@ -39,6 +39,10 @@ const Home = r => require.ensure([], () => r(require('../pages/home.vue')), 'Hom
 //vue安装
 const VueInstall = r => require.ensure([], () => r(require('../pages/vue/vueInstall.vue')), 'VueInstall');
 
+/*git*/
+//git操作
+const GitOperation = r => require.ensure([], () => r(require('../pages/git/gitOperation.vue')), 'GitOperation');
+
 
 //错误页面
 const Error = r => require.ensure([], () => r(require('../pages/error.vue')), 'Error');//错误页面
@@ -157,6 +161,14 @@ export default new Router({
       component: VueInstall,
       meta: {
         title: 'vue安装'
+      }
+    },
+    {
+      path: '/gitOperation',
+      name: 'GitOperation',
+      component: GitOperation,
+      meta: {
+        title: 'git常用操作'
       }
     },
   ]
