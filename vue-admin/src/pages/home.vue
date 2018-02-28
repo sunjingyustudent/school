@@ -2,7 +2,7 @@
   <div class="home-wrap">
     <div class="home-head">
       <div class="head-menuList" :class="{'MenuList':!extendTopFlag}">
-        <span class="head-menuList-item">推荐 记得</span>
+        <span class="head-menuList-item">推荐 试试</span>
         <span class="head-menuList-item">前端</span>
         <span class="head-menuList-item">后端</span>
         <span class="head-menuList-item">数据库</span>
