@@ -5,7 +5,7 @@
       git
     </span>
     <span class="small-title">
-      1、git 的常用操作
+      1、git 常用操作
     </span>
     
   </div>
