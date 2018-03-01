@@ -41,7 +41,7 @@ const VueInstall = r => require.ensure([], () => r(require('../pages/vue/vueInst
 
 /*git*/
 //git操作
-const GitOperation = r => require.ensure([], () => r(require('../pages/git/gitOperation.vue')), 'GitOperation');
+const GitOperation = r => require.ensure([], () => r(require('../pages/gitOperation/gitOperation.vue')), 'GitOperation');
 
 
 //错误页面
